@@ -1,0 +1,129 @@
+.signUpDiv {
+  width: 350px;
+  height: 550px;
+  padding: 20px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 5px 5px 10px #c0ced1, -5px -5px 10px #ffffff;
+  margin-top: 40px;
+  margin-left: 170px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 
+   /*logo shadow*/ 0px 0px 2px #5f5f5f, /*offset*/ 0px 0px 0px 5px,
+    /*bottom right shadow*/ 8px 8px 15px #a7aaaf,
+    /*logo shadow*/ -8px -8px 15px #ffffff;
+  background: url(https://otb.cachefly.net/wp-content/uploads/2018/02/blog-letters-orange-large.jpg);
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 2px;
+  /* letter-spacing: 1px;*/
+}
+
+.fields {
+  width: 70%;
+
+  padding: 15px 0px 0px 5px;
+}
+
+.fields input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 0px 0px 0px 0px;
+}
+
+.username-s,
+.password-s,
+.email {
+  margin-bottom: 15px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.fields svg {
+  height: 22px;
+  margin: 0 10px -3px 25px;
+}
+
+.login-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'lato', sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #24cfaa;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: 0.5s;
+}
+
+.login-button:hover {
+  background: #2fdbb6;
+}
+
+.login-button:active {
+  background: #1da88a;
+}
+
+.link {
+  padding: 5px 20px 20px 5px;
+  text-align: center;
+}
+
+.or {
+  padding: 0px 20px 20px 0px;
+  text-align: center;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.forget {
+  margin-right: 5px;
+}
+
+.sign {
+  margin-left: 10px;
+}
+
+.link a:hover {
+  color: rgb(212, 107, 107);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons {
+  border: none;
+  outline: none;
+}
