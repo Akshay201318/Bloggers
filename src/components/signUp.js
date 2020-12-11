@@ -8,8 +8,6 @@ import {
   faFacebook,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-
-import { faUser } from '@fortawesome/free-solid-svg-icons';
 import '../signup.css';
 const SignUp = () => {
   const history = useHistory();
@@ -91,6 +89,17 @@ const SignUp = () => {
       }
     }
   };
+
+  const googleLogin = async () => {
+    let response = await axios.get('http://localhost:8000/api/users/google');
+
+    console.log(response.data);
+    if (response) {
+      history.push('/home');
+    } else {
+      alert('failed to authenticate using google');
+    }
+  };
   return (
     <div className="signUpDiv">
       <div className="logo"></div>
@@ -169,6 +178,7 @@ const SignUp = () => {
               outline: 'none',
               border: 'none',
             }}
+            onClick={googleLogin}
           />
         </div>
         <div className="icons">
